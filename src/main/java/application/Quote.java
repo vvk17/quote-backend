@@ -81,7 +81,7 @@ public class Quote {
             }
         }
 
-        logger.info("API response code - " + httpCode + " score - " + score + " basis - " + basis);
+        logger.info("API response code <changed> - " + httpCode + " score - " + score + " basis - " + basis);
 
         // Set quote based on score.  This is for demonstration purposes only and is not intended to reflect a realistic mapping of scores to quotes.
         int quote = 0;
