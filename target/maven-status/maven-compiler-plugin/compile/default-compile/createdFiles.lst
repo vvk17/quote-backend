@@ -1,0 +1,10 @@
+application/HealthScoreRequest$Smoking.class
+application/HealthScoreRequest$MetricHealthModel.class
+application/Quote.class
+application/HealthScoreRequest.class
+application/Main.class
+application/QuoteRequest.class
+application/LivenessEndpoint.class
+application/MockHealthScore.class
+application/QuoteResponse.class
+application/HealthScoreResponse.class
