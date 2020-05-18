@@ -5,6 +5,8 @@ metadata:
     architecture: x86_64
     authoritative-source-url: registry.access.redhat.com
     build-date: 2019-10-29T16:44:53.794580
+    commit.image.appsody.dev/date: Mon May 18 11:53:23 2020 +0300
+    commit.image.appsody.dev/message: test commit 01
     commit.stack.appsody.dev/author: kilnerm <38245247+kilnerm@users.noreply.github.com>
     commit.stack.appsody.dev/committer: GitHub <noreply@github.com>
     commit.stack.appsody.dev/contextDir: /incubator/java-spring-boot2
@@ -13,7 +15,11 @@ metadata:
     description: This image is the Kabanero development container for the java-spring-boot2
       stack
     distribution-scope: public
-    image.opencontainers.org/created: "2020-05-15T18:33:34+03:00"
+    image.opencontainers.org/created: "2020-05-18T14:17:13+03:00"
+    image.opencontainers.org/documentation: https://github.com/vvk17/quote-backend
+    image.opencontainers.org/revision: da6e91891c74e392bd5f38eee857510c1311c17b-modified
+    image.opencontainers.org/source: https://github.com/vvk17/quote-backend/tree/master
+    image.opencontainers.org/url: https://github.com/vvk17/quote-backend
     k8s.io/description: The Universal Base Image is designed and engineered to be
       the base layer for all of your containerized applications, middleware and utilities.
       This base image is freely redistributable, but Red Hat only supports Red Hat
@@ -22,6 +28,7 @@ metadata:
     k8s.io/display-name: Red Hat Universal Base Image 8
     maintainer: Red Hat, Inc.
     name: kabanero/java-spring-boot2
+    namespace: vvk17-insurance-quote
     openshift.io/expose-services: ""
     openshift.io/tags: base rhel8
     redhat.com/build-host: cpt-1002.osbs.prod.upshift.rdu2.redhat.com
@@ -54,7 +61,7 @@ metadata:
   name: quote-backend
   namespace: vvk17-insurance-quote
 spec:
-  applicationImage: docker-registry.default.svc:5000/v2/vvk17-insurance-quote/quote-backend:v1
+  applicationImage: image-registry.openshift-image-registry.svc:5000/vvk17-insurance-quote/quote-backend:v1
   createKnativeService: false
   envFrom:
   - configMapRef:
