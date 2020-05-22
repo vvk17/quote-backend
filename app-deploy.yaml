@@ -4,20 +4,20 @@ metadata:
   annotations:
     architecture: x86_64
     authoritative-source-url: registry.access.redhat.com
-    build-date: 2019-10-29T16:44:53.794580
-    commit.image.appsody.dev/date: Mon May 18 11:53:23 2020 +0300
-    commit.image.appsody.dev/message: test commit 01
+    build-date: 2020-03-31T14:54:13.907559
+    commit.image.appsody.dev/date: Tue May 19 10:04:07 2020 +0300
+    commit.image.appsody.dev/message: test commit 03
     commit.stack.appsody.dev/author: kilnerm <38245247+kilnerm@users.noreply.github.com>
     commit.stack.appsody.dev/committer: GitHub <noreply@github.com>
     commit.stack.appsody.dev/contextDir: /incubator/java-spring-boot2
-    commit.stack.appsody.dev/date: Fri Apr 3 09:22:57 2020 +0100
-    commit.stack.appsody.dev/message: 'Merge pull request #316 from groeges/release-0.6'
+    commit.stack.appsody.dev/date: Thu May 14 09:37:35 2020 +0100
+    commit.stack.appsody.dev/message: 'Merge pull request #340 from groeges/release-0.9-codewind'
     description: This image is the Kabanero development container for the java-spring-boot2
       stack
     distribution-scope: public
-    image.opencontainers.org/created: "2020-05-18T14:17:13+03:00"
+    image.opencontainers.org/created: "2020-05-21T19:03:46+03:00"
     image.opencontainers.org/documentation: https://github.com/vvk17/quote-backend
-    image.opencontainers.org/revision: da6e91891c74e392bd5f38eee857510c1311c17b-modified
+    image.opencontainers.org/revision: 6c3bb9f46fda3af8211848ef256998bfb23bd72e-modified
     image.opencontainers.org/source: https://github.com/vvk17/quote-backend/tree/master
     image.opencontainers.org/url: https://github.com/vvk17/quote-backend
     k8s.io/description: The Universal Base Image is designed and engineered to be
@@ -28,28 +28,29 @@ metadata:
     k8s.io/display-name: Red Hat Universal Base Image 8
     maintainer: Red Hat, Inc.
     name: kabanero/java-spring-boot2
-    namespace: vvk17-insurance-quote
+    namespace: insurance-quote
     openshift.io/expose-services: ""
     openshift.io/tags: base rhel8
-    redhat.com/build-host: cpt-1002.osbs.prod.upshift.rdu2.redhat.com
+    redhat.com/build-host: cpt-1007.osbs.prod.upshift.rdu2.redhat.com
     redhat.com/component: ubi8-container
     redhat.com/license_terms: https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI
-    release: "277"
-    stack.appsody.dev/authors: Erin Schnabel <schnabel@us.ibm.com>, Ozzy Osborne <ozzy@ca.ibm.com>
+    release: "408"
+    stack.appsody.dev/authors: Erin Schnabel <ebullient>, Ozzy Osborne <bardweller>,
+      Richard Trotter <richard-trotter>, Harish Yayi <yharish991>
     stack.appsody.dev/configured: docker.io/kabanero/java-spring-boot2:0.3
-    stack.appsody.dev/created: "2020-04-21T06:49:54Z"
+    stack.appsody.dev/created: "2020-05-19T06:48:21Z"
     stack.appsody.dev/description: Spring Boot using OpenJ9 and Maven
-    stack.appsody.dev/digest: sha256:76b4b05205b479d45bae53f136d80a3364d795bace55cfdcab3e8bf3fc394ee2
+    stack.appsody.dev/digest: sha256:5c7154e6758d60c3a2aa855ada917aa7da02ca40740f41637166d30aed3b4733
     stack.appsody.dev/documentation: https://github.com/kabanero-io/collections/tree/master/incubator/java-spring-boot2/README.md
     stack.appsody.dev/licenses: Apache-2.0
-    stack.appsody.dev/revision: 27a3254c80e6c5367a76e6099c2e18b393d15841
+    stack.appsody.dev/revision: 104bb146d0d770e30886b845d7fca9311d54ed20
     stack.appsody.dev/source: https://github.com/kabanero-io/collections/tree/master/incubator/java-spring-boot2/image
-    stack.appsody.dev/tag: docker.io/kabanero/java-spring-boot2:0.3.28
+    stack.appsody.dev/tag: docker.io/kabanero/java-spring-boot2:0.3.29
     stack.appsody.dev/title: Spring Boot®
     stack.appsody.dev/url: https://github.com/kabanero-io/collections/tree/master/incubator/java-spring-boot2
     summary: Image for Kabanero java-spring-boot2 development
-    url: https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8/images/8.1-277
-    vcs-ref: c42933bcdbf9f1c232e981a5e40de257c3534c8e
+    url: https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8/images/8.1-408
+    vcs-ref: 26f36bfa3e3a04c8c866b250924c1aefc34f01c9
     vcs-type: git
     vendor: Kabanero
     version: 0.3.23
@@ -57,11 +58,11 @@ metadata:
   labels:
     image.opencontainers.org/title: quote-backend
     stack.appsody.dev/id: java-spring-boot2
-    stack.appsody.dev/version: 0.3.28
+    stack.appsody.dev/version: 0.3.29
   name: quote-backend
-  namespace: vvk17-insurance-quote
+  namespace: insurance-quote
 spec:
-  applicationImage: image-registry.openshift-image-registry.svc:5000/vvk17-insurance-quote/quote-backend:v1
+  applicationImage: image-registry.openshift-image-registry.svc:5000/insurance-quote/quote-backend:v1
   createKnativeService: false
   envFrom:
   - configMapRef:
