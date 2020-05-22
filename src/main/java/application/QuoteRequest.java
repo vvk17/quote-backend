@@ -8,6 +8,7 @@ import lombok.Setter;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Getter @Setter
+
 public class QuoteRequest {
 
     @JsonProperty
